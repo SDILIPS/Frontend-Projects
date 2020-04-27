@@ -1,8 +1,4 @@
-@import "blog_post_mobstyle.css" screen and (max-width: 768px);
-@import "blog_post_tabstyle.css" screen and (min-width: 768px) and (max-width:992px);
-@import "blog_post_largestyle.css" screen and (min-width:1440px);
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1440px) {
     #avatar-name {
         width: 100px;
         height: 50px;

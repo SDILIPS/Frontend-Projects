@@ -1,0 +1,62 @@
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    #world-design {
+        display: none;
+    }
+
+    footer {
+        padding: 5px 5px;
+        margin: 5px 5px;
+        color: white;
+        background-color: grey;
+        border-radius: 25px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .lead {
+        padding: 15px 15px;
+        margin: 15px 15px;
+    }
+
+    .world {
+        color: green;
+    }
+
+    .design {
+        color: blue;
+    }
+
+    #page {
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    #content {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #post1,
+    #post2,
+    #post3 {
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        border: 2px solid grey;
+        padding: 5px 5px;
+        background-color: #e6eded;
+        border-radius: 25px;
+    }
+}

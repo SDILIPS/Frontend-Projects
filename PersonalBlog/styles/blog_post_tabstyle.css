@@ -1,12 +1,7 @@
-@import "blog_post_mobstyle.css" screen and (max-width: 768px);
-@import "blog_post_tabstyle.css" screen and (min-width: 768px) and (max-width:992px);
-@import "blog_post_largestyle.css" screen and (min-width:1440px);
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width:992px) {
     #avatar-name {
-        width: 100px;
+        width: 50px;
         height: 50px;
-        padding: 0 20px;
     }
 
     .card {
@@ -22,65 +17,70 @@
         padding: 1px 1px;
     }
 
+    nav {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .lead {
+        padding: 15px 15px;
+        margin: 15px 15px;
+    }
+
     .share {
-        padding: 1px 1px;
-        margin: 1px 1px;
+        padding: 2px 2px;
+        margin: 2px 2px;
     }
 
     img {
-        border-radius: 8px;
+        border-radius: 4px;
     }
 
     #big-size {
         background-color: white;
-        padding: 50px 50px;
+        padding: 5px 5px;
         align-content: center;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
 
     #left-margin, 
     #code {
         border-left: 2px solid grey;
-        padding-left: 20px;
+        padding-left: 2px;
         background-color: white;
     }
 
-    nav {
-        margin: 50px 50px;
-    }
-
-
     footer {
-        padding: 20px 20px;
-        margin: 20px 50px;
+        padding: 5px 5px;
+        margin: 5px 5px;
         color: white;
         background-color: grey;
         border-radius: 25px;
     }
 
     header {
-        margin: 50px 50px;
+        margin: 5px 5px;
     }
 
     #post1 {
-        grid-area: one;
         border: 2px solid grey;
-        padding: 20px 20px;
+        padding: 2px 2px;
         background-color: #e6eded;
         border-radius: 25px;
-        margin: 50px 50px;
+        margin: 5px 5px;
     }
 
     #page {
         display: grid;
         width: 100%;
-        height: 250px;
-        grid-template-areas: "head head"
-                       "nav  main"
-                       "foot  foot";
-        grid-template-rows: 400px 1fr 100px;
-        grid-template-columns: 200px 1fr;
+        grid-template-areas: "head"
+                        "nav"
+                       "main"
+                       "foot";
+        grid-template-rows: 400px 100px 1fr 100px;
+        grid-template-columns: 1fr;
     }
 
     #page > header {
